@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+[![openupm](https://img.shields.io/npm/v/com.volumebox.toolbox?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.volumebox.toolbox/) 
+![GitHub](https://img.shields.io/github/license/GariestGary/Unity-Toolbox)
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![toolbox_banner](https://github.com/GariestGary/Unity-Toolbox/assets/38670681/b4842e79-d75d-49b2-adf9-b60ef5754fc7)
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Toolbox is a framework that makes it easier to create games using Unity. Many frequently used things by programmers are taken into account in the toolbox and configured in such a way as to reduce the time and number of lines of code spent on them

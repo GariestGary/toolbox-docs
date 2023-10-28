@@ -1,2 +1,14 @@
-site_name: VolumeBox
-theme: readthedocs
+site_name: Toolbox
+site_author : Gadzhi Eminov
+site_description : Documentation of GitHub projects
+theme:
+  name: material
+  logo: logo.png
+  palette:
+    primary: custom
+    accent: custom
+extra_css:
+  - stylesheets/extra.css
+nav:
+    - 'Content':
+        - 'Installing': 'toolbox/install.md'
