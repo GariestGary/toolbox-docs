@@ -12,3 +12,5 @@ extra_css:
 nav:
     - 'Content':
         - 'Installing': 'toolbox/install.md'
+        - 'Setup': 'toolbox/setup.md'
+        - 'Toolbox Settings': 'toolbox/toolbox-settings.md'
