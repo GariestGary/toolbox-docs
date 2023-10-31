@@ -39,6 +39,22 @@ Each pool has following settings:
 - `Prefab`: Prefab which pool will instantiate objects.
 - `Initial Pool Size`: Count of an objects tha will be added to the pool at start.
 
+<img src="pool_filled.png">
+
 To delete pool, simply click button with trash icon.
 
 You can also search necessary pool by writing its tag in search field.
+
+##Audio Player
+
+<img src="audio_player_empty.png">
+
+From this window you can edit audio albums list and adjust properties of each.
+
+You can create new album by clicking 'Add Album' button.
+
+<img src="album_added.png">
+
+Each album has following settings:
+
+- 
