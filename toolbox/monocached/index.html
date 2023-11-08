@@ -13,8 +13,10 @@
       
       
       
+        <link rel="prev" href="../toolbox-settings/">
       
-        <link rel="next" href="../setup/">
+      
+        <link rel="next" href="../updater/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>Installing - Toolbox</title>
+        <title>MonoCached - Toolbox</title>
       
     
     
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-with-openupm" class="md-skip">
+        <a href="#basics" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installing
+              MonoCached
             
           </span>
         </div>
@@ -236,27 +238,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Installing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,38 +249,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-with-openupm" class="md-nav__link">
-    Install with OpenUPM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-via-package-manager" class="md-nav__link">
-    Install via Package Manager
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,9 +298,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../monocached/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MonoCached
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -357,6 +327,31 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -514,15 +509,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-with-openupm" class="md-nav__link">
-    Install with OpenUPM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-via-package-manager" class="md-nav__link">
-    Install via Package Manager
+  <a href="#basics" class="md-nav__link">
+    Basics
   </a>
   
 </li>
@@ -542,57 +530,131 @@
                   
 
 
-  <h1>Installing</h1>
+  <h1>MonoCached</h1>
 
-<h3 id="install-with-openupm">Install with OpenUPM</h3>
-<p>Once you have the <a href="https://github.com/openupm/openupm-cli#installation">OpenUPM cli</a>, run the following command:</p>
-<ul>
-<li>Go to your Unity project directory</li>
-</ul>
-<p><code>cd YOUR_UNITY_PROJECT_DIR</code></p>
-<ul>
-<li>Install package: com.volumebox.toolbox</li>
-</ul>
-<p><code>openupm add com.volumebox.toolbox</code></p>
-<p>Alternatively, merge the snippet to Packages/manifest.json </p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;scopedRegistries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;package.openupm.com&quot;</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://package.openupm.com&quot;</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">&quot;scopes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">              </span><span class="s2">&quot;com.volumebox&quot;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">              </span><span class="s2">&quot;com.openupm&quot;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="p">]</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">],</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">&quot;com.volumebox.toolbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.4&quot;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+<h2 id="basics">Basics</h2>
+<p>Toolbox has own update system, which wraps around basic Unity's update cycle and doing his own calculations.</p>
+<p>Main component in this system is <code>MonoCached</code>, which are analogue to MonoBehaviour with some extra described below.</p>
+<p><code>MonoCached</code> has same update cycle related methods, but named differently. Here are list of all "overrided" methods:</p>
+<table>
+<thead>
+<tr>
+<th>Basic</th>
+<th>Analogue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Awake</code></td>
+<td><code>Rise</code></td>
+</tr>
+<tr>
+<td><code>Start</code></td>
+<td><code>Ready</code></td>
+</tr>
+<tr>
+<td><code>Update</code></td>
+<td><code>Tick</code></td>
+</tr>
+<tr>
+<td><code>FixedUpdate</code></td>
+<td><code>FixedTick</code></td>
+</tr>
+<tr>
+<td><code>LateUpdate</code></td>
+<td><code>LateTick</code></td>
+</tr>
+<tr>
+<td><code>OnDestroy</code></td>
+<td><code>Destroyed</code></td>
+</tr>
+<tr>
+<td><code>OnEnable</code></td>
+<td><code>OnActivate</code></td>
+</tr>
+<tr>
+<td><code>OnDisable</code></td>
+<td><code>OnDeactivate</code></td>
+</tr>
+</tbody>
+</table>
+<p>Also, <code>MonoCached</code> has methods and properties to control lifecycle:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Pause</code></td>
+<td>Pauses execution of <code>Tick</code>, <code>FixedTick</code> and <code>LateTick</code> methods</td>
+</tr>
+<tr>
+<td><code>Resume</code></td>
+<td>Resumes execution of <code>Tick</code>, <code>FixedTick</code> and <code>LateTick</code> methods</td>
+</tr>
+<tr>
+<td><code>EnableGameObject</code></td>
+<td>Enables <code>gameObject</code> on which component placed</td>
+</tr>
+<tr>
+<td><code>DisableGameObject</code></td>
+<td>Disables <code>gameObject</code> on which component placed</td>
+</tr>
+<tr>
+<td><code>ProcessIfInactiveSelf</code></td>
+<td>Bool property. If enabled, then <code>Tick</code>, <code>FixedTick</code> and <code>LateTick</code> methods will be executed even if gameObject inactive self</td>
+</tr>
+<tr>
+<td><code>ProcessIfInactiveInHierarchy</code></td>
+<td>Bool property. If enabled, then <code>Tick</code>, <code>FixedTick</code> and <code>LateTick</code> methods will be executed even if gameObject inactive in hierarchy</td>
+</tr>
+<tr>
+<td><code>delta</code></td>
+<td>Float property. Delta time, controlled by timescale, interval etc</td>
+</tr>
+<tr>
+<td><code>fixedDelta</code></td>
+<td>Float property. Fixed delta time, controlled by timescale, interval etc</td>
+</tr>
+<tr>
+<td><code>Interval</code></td>
+<td>Float property. Sets the interval between calling <code>Tick</code>, <code>FixedTick</code> and <code>LateTick</code> methods. Delta time then will be a sum of deltas between last call and next. If setted to 0, then it works usually</td>
+</tr>
+</tbody>
+</table>
+<p>To use full power of 'Toolbox', just derive your class from <code>MonoCached</code> and override method you need.</p>
+<p>Here's some example:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Rocket</span><span class="p">:</span><span class="w"> </span><span class="n">MonoCached</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">SpriteRenderer</span><span class="w"> </span><span class="n">sr</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Rise</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetComponent</span><span class="o">&lt;</span><span class="n">SpriteRenderer</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Tick</span><span class="p">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="c1">//Here we reducing update calls if we don&#39;t see the object</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="cm">/*There are some logic to check if object is out of screen*/</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">            </span><span class="n">Interval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="k">else</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">            </span><span class="n">Interval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="c1">//Delta time will be a sum of deltas on every frame between last call of this method and next</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="p">.</span><span class="n">forward</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">delta</span><span class="p">;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="install-via-package-manager">Install via Package Manager</h3>
-<ul>
-<li>open Edit/Project Settings/Package Manager</li>
-<li>
-<p>add a new Scoped Registry (or edit the existing OpenUPM entry)</p>
-<p>Name: <code>package.openupm.com</code></p>
-<p>URL: <code>https://package.openupm.com</code></p>
-</li>
-<li>
-<p>add following scopes:</p>
-<p><code>com.volumebox.toolbox</code></p>
-<p><code>com.dbrizov</code></p>
-<p><code>com.solidalloy</code></p>
-<p><code>org.nuget</code></p>
-<p><code>com.cysharp</code></p>
-</li>
-<li>
-<p>click <code>Save</code> (or <code>Apply</code>)</p>
-</li>
-<li>open <code>My Registries</code> packages in package manager window</li>
-<li>install <code>VolumeBox Toolbox</code></li>
-</ul>
+<p>Because of <code>MonoCached</code> derived from MonoBehaviour you can still use <code>Awake</code>, <code>Update</code>, etc...</p>
 
 
 

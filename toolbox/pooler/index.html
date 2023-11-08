@@ -13,8 +13,10 @@
       
       
       
+        <link rel="prev" href="../traveler/">
       
-        <link rel="next" href="../setup/">
+      
+        <link rel="next" href="../messenger/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>Installing - Toolbox</title>
+        <title>Pooler - Toolbox</title>
       
     
     
@@ -75,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-with-openupm" class="md-skip">
+        <a href="#scene-handler" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installing
+              Pooler
             
           </span>
         </div>
@@ -236,27 +238,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Installing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,38 +249,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-with-openupm" class="md-nav__link">
-    Install with OpenUPM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-via-package-manager" class="md-nav__link">
-    Install via Package Manager
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -406,9 +358,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pooler/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pooler
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -417,6 +387,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scene-handler" class="md-nav__link">
+    Scene Handler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene-loading" class="md-nav__link">
+    Scene Loading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene-unloading" class="md-nav__link">
+    Scene Unloading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -514,15 +523,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-with-openupm" class="md-nav__link">
-    Install with OpenUPM
+  <a href="#scene-handler" class="md-nav__link">
+    Scene Handler
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-via-package-manager" class="md-nav__link">
-    Install via Package Manager
+  <a href="#scene-loading" class="md-nav__link">
+    Scene Loading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene-unloading" class="md-nav__link">
+    Scene Unloading
   </a>
   
 </li>
@@ -542,57 +558,61 @@
                   
 
 
-  <h1>Installing</h1>
+  <h1>Pooler</h1>
 
-<h3 id="install-with-openupm">Install with OpenUPM</h3>
-<p>Once you have the <a href="https://github.com/openupm/openupm-cli#installation">OpenUPM cli</a>, run the following command:</p>
-<ul>
-<li>Go to your Unity project directory</li>
-</ul>
-<p><code>cd YOUR_UNITY_PROJECT_DIR</code></p>
-<ul>
-<li>Install package: com.volumebox.toolbox</li>
-</ul>
-<p><code>openupm add com.volumebox.toolbox</code></p>
-<p>Alternatively, merge the snippet to Packages/manifest.json </p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;scopedRegistries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;package.openupm.com&quot;</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://package.openupm.com&quot;</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">&quot;scopes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">              </span><span class="s2">&quot;com.volumebox&quot;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">              </span><span class="s2">&quot;com.openupm&quot;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="p">]</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">],</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">&quot;com.volumebox.toolbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.4&quot;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+<p><code>Traveler</code> class allows you to easily load/unload scenes (additevely or not) and provides UniTasks for you to manage your call orders in code. It also handles initial logic in scenes.</p>
+<h2 id="scene-handler">Scene Handler</h2>
+<p>Let's imagine that you nedd some initial preparations in scene before all starts working. To do this, you can define your own <code>SceneHandler</code> for this.</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">GameSceneHandler</span><span class="p">:</span><span class="w"> </span><span class="n">SceneHandler</span><span class="o">&lt;</span><span class="n">GameSceneArgs</span><span class="o">&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetupScene</span><span class="p">(</span><span class="n">GameSceneArgs</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">GameSceneArgs</span><span class="p">:</span><span class="w"> </span><span class="n">SceneArgs</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="install-via-package-manager">Install via Package Manager</h3>
-<ul>
-<li>open Edit/Project Settings/Package Manager</li>
-<li>
-<p>add a new Scoped Registry (or edit the existing OpenUPM entry)</p>
-<p>Name: <code>package.openupm.com</code></p>
-<p>URL: <code>https://package.openupm.com</code></p>
-</li>
-<li>
-<p>add following scopes:</p>
-<p><code>com.volumebox.toolbox</code></p>
-<p><code>com.dbrizov</code></p>
-<p><code>com.solidalloy</code></p>
-<p><code>org.nuget</code></p>
-<p><code>com.cysharp</code></p>
-</li>
-<li>
-<p>click <code>Save</code> (or <code>Apply</code>)</p>
-</li>
-<li>open <code>My Registries</code> packages in package manager window</li>
-<li>install <code>VolumeBox Toolbox</code></li>
-</ul>
+<p>Wait a minute! What this GameSceneArgs class means?! </p>
+<p>Exactly what you're thinking about! You can provide additional data to the scene when loading it, e.g. you need to create several levels with different difficulties. Creating a scene for each difficulty seems weird, because you have to recreate most of the objects each time if your scene stays the same in general. Instead of that you can set up one scene and change it's logic depending on data provided to it.</p>
+<p>Here's some example:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PingPongSceneHandler</span><span class="p">:</span><span class="w"> </span><span class="n">SceneHandler</span><span class="o">&lt;</span><span class="n">PingPongSceneArgs</span><span class="o">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="na">[SerializeField]</span><span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="n">Enemy</span><span class="w"> </span><span class="n">m_Enemy</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetupScene</span><span class="p">(</span><span class="n">PingPongSceneArgs</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="n">m_Enemy</span><span class="p">.</span><span class="n">SetSpeed</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">EnemySpeed</span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="na">[Serializable]</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PingPongSceneArgs</span><span class="p">:</span><span class="w"> </span><span class="n">SceneArgs</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">{</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">EnemySpeed</span><span class="p">;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>In that example we're setting up enemy's speed defined by <code>PingPongSceneArgs</code>. <code>SceneArgs</code> class derived from <code>ScriptableObject</code>, so you can create some <code>PingPongSceneArgs</code> assets and bind it to difficulty buttons in your menu scene.</p>
+<h2 id="scene-loading">Scene Loading</h2>
+<p>To load scene simply call:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Traveler</span><span class="p">.</span><span class="n">LoadScene</span><span class="p">(</span><span class="s">&quot;MySceneName&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MySceneArgs</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p>It will return a UniTask, so you can await it, to manage your calls if you need:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">await</span><span class="w"> </span><span class="n">Fader</span><span class="p">.</span><span class="n">In</span><span class="p">(</span><span class="m">0.2f</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">await</span><span class="w"> </span><span class="n">Traveler</span><span class="p">.</span><span class="n">LoadScene</span><span class="p">(</span><span class="s">&quot;MySceneName&quot;</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">await</span><span class="w"> </span><span class="n">Fader</span><span class="p">.</span><span class="n">Out</span><span class="p">(</span><span class="m">0.2f</span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="scene-unloading">Scene Unloading</h2>
+<p>To unload scene simply call:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Traveler</span><span class="p">.</span><span class="n">UnloadScene</span><span class="p">(</span><span class="s">&quot;MySceneName&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>You can also unload all scenes, except <code>MAIN</code>, by calling:</p>
+<div class="language-C# highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">Traveler</span><span class="p">.</span><span class="n">UnloadAllScenes</span><span class="p">();</span>
+</span></code></pre></div>
+<p>This methods will also returns a UniTask.</p>
 
 
 

@@ -16,6 +16,8 @@
         <link rel="prev" href="../setup/">
       
       
+        <link rel="next" href="../monocached/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
@@ -333,10 +335,164 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#audio-player" class="md-nav__link">
+    Audio Player
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monocached/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MonoCached
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updater/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updater
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../traveler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Traveler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pooler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pooler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../messenger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Messenger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audioplayer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio Player
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Database
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -387,6 +543,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#audio-player" class="md-nav__link">
+    Audio Player
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -413,7 +583,7 @@
 <li>Database</li>
 </ul>
 <p>Let's look all them.</p>
-<h2 id="main-settings">Main Settings</h2>
+<h3 id="main-settings">Main Settings</h3>
 <p><img src="main_settings.png"></p>
 <p>There you can edit following properties:</p>
 <ul>
@@ -425,19 +595,60 @@
 <li><code>Manual Fade Out</code>: If enabled, then you can manually control when black screen will be faded out after initial scene loaded, otherwise Toolbox automatically fades it out right after initial scene loaded.</li>
 <li><code>Fade Out Duration</code>: Simply controls fade out duration when <code>Manual Fade Out</code> disabled.</li>
 </ul>
-<h2 id="pooler">Pooler</h2>
+<h3 id="pooler">Pooler</h3>
 <p><img src="pooler_empty.png"></p>
 <p>From this window you can edit initial pools list and adjust properties of each.</p>
 <p>You can create new pool by clicking 'Add Pool' button.</p>
 <p><img src="pool_added.png"></p>
-<p>Each pool has following settings:</p>
+<p>Each pool has following parameters:</p>
 <ul>
-<li><code>Pool Tag</code>: The tag through which yo can retrieve pooled object.</li>
+<li><code>Pool Tag</code>: The tag, through which you can retrieve pooled object.</li>
 <li><code>Prefab</code>: Prefab which pool will instantiate objects.</li>
 <li><code>Initial Pool Size</code>: Count of an objects tha will be added to the pool at start.</li>
 </ul>
+<p><img src="pool_filled.png"></p>
 <p>To delete pool, simply click button with trash icon.</p>
 <p>You can also search necessary pool by writing its tag in search field.</p>
+<h3 id="audio-player">Audio Player</h3>
+<p><img src="audio_player_empty.png"></p>
+<p>From this window you can edit audio albums list and adjust properties of each.</p>
+<p>You can create new album by clicking 'Add Album' button.</p>
+<p><img src="album_added.png"></p>
+<p>Each album has following parameters:</p>
+<ul>
+<li><code>Album Name</code>: Name of the album, through which you can get access to clips it containing.</li>
+<li><code>Use Separate Audio Source</code>: If enabled, then Toolbox will create separate audio source for this album.</li>
+<li><code>Mixer Group</code>: Mixer group through which you can control volume, effects etc of the audio source, binded to this album.</li>
+</ul>
+<p>To delete album click button with trash icon.</p>
+<p>To add clips in album click 'Add Clip' button.</p>
+<p><img src="audio_clip_added.png"></p>
+<p>Each clip has following parameters:</p>
+<ul>
+<li><code>Clip ID</code>: ID of the clip, through which you can retrieve it.</li>
+<li><code>Audio Clip</code>: Actual audio clip asset.</li>
+</ul>
+<p><img src="database_filled.png"></p>
+<p>To delete clip click button with trash icon.</p>
+<h3 id="database">Database</h3>
+<p>From this window you can define database for your project.
+If you opening it first time it will look like this:</p>
+<p><img src="database.png"></p>
+<p>To create new database right click in project window and go to <code>Create/Toolbox/Properties Database</code>.
+It will create new scriptable object with all variables in it.
+Rename it as you wish and drag into 'Properties' fieeld in 'Database' tab of Toolbox Settings window.
+After adding database you can define your propertiess.</p>
+<p><img src="database_added.png"></p>
+<p>To add new property click '+' button.</p>
+<p><img src="database_property_added.png"></p>
+<p>Each property has following parameters:</p>
+<ul>
+<li><code>ID</code>: ID of the property, through which you can retrieve it.</li>
+<li><code>Type</code>: Type of the property. Can be one of the following: <code>Bool</code>, <code>Float</code>, <code>Int</code>, <code>Vector2</code>, <code>Vector3</code>, <code>Vector4</code>, <code>String</code>.</li>
+<li><code>Value</code>: Actual value of the property.</li>
+</ul>
+<p><img src="database_filled.png"></p>
+<p>To delete property click button with trash icon.</p>
 
 
 
@@ -476,7 +687,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
