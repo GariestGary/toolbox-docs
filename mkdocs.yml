@@ -1,4 +1,4 @@
-site_name: Toolbox
+site_name: VolumeBox
 site_author : Gadzhi Eminov
 site_description : Documentation of GitHub projects
 theme:
@@ -20,14 +20,15 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 nav:
-    - 'Content':
-        - 'Installing': 'toolbox/install.md'
-        - 'Setup': 'toolbox/setup.md'
-        - 'Toolbox Settings': 'toolbox/toolbox-settings.md'
-        - 'MonoCached': 'toolbox/monocached.md'
-        - 'Updater': 'toolbox/updater.md'
-        - 'Traveler': 'toolbox/traveler.md'
-        - 'Pooler': 'toolbox/pooler.md'
-        - 'Messenger': 'toolbox/messenger.md'
-        - 'Audio Player': 'toolbox/audioplayer.md'
-        - 'Database': 'toolbox/database.md'
+  - 'Toolbox':
+    - 'About': 'toolbox/about.md'
+    - 'Installing': 'toolbox/install.md'
+    - 'Setup': 'toolbox/setup.md'
+    - 'Toolbox Settings': 'toolbox/toolbox-settings.md'
+    - 'MonoCached': 'toolbox/monocached.md'
+    - 'Updater': 'toolbox/updater.md'
+    - 'Traveler': 'toolbox/traveler.md'
+    - 'Pooler': 'toolbox/pooler.md'
+    - 'Messenger': 'toolbox/messenger.md'
+    - 'Audio Player': 'toolbox/audioplayer.md'
+    - 'Database': 'toolbox/database.md'
